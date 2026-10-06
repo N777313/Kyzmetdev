@@ -1,16 +1,983 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О нас</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ҚЫЗМЕТ KZ — ev, bahçe ve arsa işleri</title>
+
+    <meta
+        name="description"
+        content="ҚЫЗМЕТ KZ — ev işleri, bahçe temizliği, çöp taşıma, çit tamiri, arsa işleri ve diğer çeşitli hizmetler."
+    >
+
+    <meta name="theme-color" content="#08754D">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>О нас</h1>
-    <p>Это вторая страница моего сайта.</p>
+<!-- ================= HEADER ================= -->
 
-    <a href="index.html">← Вернуться на главную</a>
+<header class="header" id="header">
+    <div class="container header__inner">
+
+        <a href="#top" class="logo" aria-label="ҚЫЗМЕТ KZ — ana sayfa">
+            <span>ҚЫЗМЕТ</span>
+            <strong>KZ</strong>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#services">Hizmetler</a>
+            <a href="#how">Nasıl çalışıyoruz</a>
+            <a href="#works">Çalışmalar</a>
+            <a href="#contacts">İletişim</a>
+        </nav>
+
+        <a
+            class="btn btn--primary header__call"
+            data-phone
+            href="#"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                19.79 19.79 0 0 1-8.63-3.07
+                19.5 19.5 0 0 1-6-6
+                19.79 19.79 0 0 1-3.07-8.67
+                A2 2 0 0 1 4.11 2h3a2 2 0 0 1
+                2 1.72c.12.9.33 1.78.62 2.63
+                a2 2 0 0 1-.45 2.11L8 9.73
+                a16 16 0 0 0 6 6l1.27-1.27
+                a2 2 0 0 1 2.11-.45
+                c.85.29 1.73.5 2.63.62
+                A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Ara
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Menüyü aç"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+    <div class="container hero__grid">
+
+        <div class="hero__content reveal">
+
+            <div class="eyebrow">
+                <span class="eyebrow__dot"></span>
+                Ev ve ev işleri için yardım
+            </div>
+
+            <h1>
+                Elinizin değmediği
+                işleri
+                <span>biz yapalım.</span>
+            </h1>
+
+            <p class="hero__text">
+                ҚЫЗМЕТ KZ — evde, bahçede ve arsanızda yardım.
+                Yapılması gerekeni anlatın — işi konuşalım
+                ve anlaşalım.
+            </p>
+
+            <div class="hero__actions">
+                <a
+                    class="btn btn--primary btn--large"
+                    data-phone
+                    href="#"
+                >
+                    Ara
+                </a>
+
+                <a
+                    class="btn btn--secondary btn--large"
+                    href="#contact-form"
+                >
+                    İşi konuşalım
+                </a>
+            </div>
+
+            <div class="hero__trust">
+                <div class="trust-item">
+                    <span class="trust-item__icon">✓</span>
+                    Farklı işler
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-item__icon">✓</span>
+                    Anlaşmalı çalışma
+                </div>
+
+                <div class="trust-item">
+                    <span class="trust-item__icon">✓</span>
+                    Açık iletişim
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero__visual reveal reveal--delay">
+
+            <div class="hero__image">
+                <img
+                    src="images/hero.jpg"
+                    alt="Müstakil evin yanında yapılan ev ve bahçe işleri"
+                >
+            </div>
+
+            <div class="hero-card">
+                <div class="hero-card__icon">✓</div>
+
+                <div>
+                    <strong>Bir işiniz mi var?</strong>
+                    <span>Bize anlatmanız yeterli</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section services" id="services">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-label">NE YAPIYORUZ</span>
+
+            <h2>
+                Ev ve arsanızdaki
+                <span>işlerde yardımcı oluyoruz</span>
+            </h2>
+
+            <p>
+                Ev işleri, günlük işler ve diğer görevleri
+                talebinize göre yerine getiriyoruz.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card reveal">
+                <div class="service-card__number">01</div>
+                <div class="service-card__icon">🏠</div>
+
+                <h3>Ev işleri</h3>
+
+                <p>
+                    Daire veya müstakil evlerde
+                    günlük ve ev işlerine yardım.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">02</div>
+                <div class="service-card__icon">🗑️</div>
+
+                <h3>Çöp taşıma</h3>
+
+                <p>
+                    Ev ve çeşitli işlerden sonra
+                    çöplerin toplanması ve taşınması.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">03</div>
+                <div class="service-card__icon">🌿</div>
+
+                <h3>Bahçe temizliği</h3>
+
+                <p>
+                    Yaprak, dal, çöp ve diğer işlerle
+                    alanın düzenlenmesi.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">04</div>
+                <div class="service-card__icon">🧱</div>
+
+                <h3>Çit tamiri</h3>
+
+                <p>
+                    Hasar görmüş çit bölümlerinin
+                    onarılması ve yenilenmesi.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">05</div>
+                <div class="service-card__icon">💧</div>
+
+                <h3>Fosseptik</h3>
+
+                <p>
+                    Fosseptik sistemi kurulumu ile ilgili
+                    işlerin organize edilmesine yardım.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">06</div>
+                <div class="service-card__icon">🐑</div>
+
+                <h3>Hayvan kesimi</h3>
+
+                <p>
+                    Hizmet önceden yapılan
+                    anlaşmaya göre gerçekleştirilir.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">07</div>
+                <div class="service-card__icon">🚕</div>
+
+                <h3>Şehirlerarası taksi</h3>
+
+                <p>
+                    Şehirler arasında önceden
+                    anlaşmaya göre yolcu taşımacılığı.
+                </p>
+
+                <a href="#contact-form">
+                    Yolculuğu konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">08</div>
+                <div class="service-card__icon">🚚</div>
+
+                <h3>Şehir içi teslimat</h3>
+
+                <p>
+                    Eşya, ürün ve diğer yüklerin
+                    şehir içinde teslim edilmesi.
+                </p>
+
+                <a href="#contact-form">
+                    Teslimatı konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">09</div>
+                <div class="service-card__icon">🧹</div>
+
+                <h3>Temizlik</h3>
+
+                <p>
+                    Daire, ev ve diğer alanların
+                    önceden anlaşmaya göre temizlenmesi.
+                </p>
+
+                <a href="#contact-form">
+                    Temizlik siparişi ver →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">10</div>
+                <div class="service-card__icon">🚜</div>
+
+                <h3>Özel araç ve makine hizmetleri</h3>
+
+                <p>
+                    İnşaat ve çeşitli işler için
+                    özel araç ve makinelerin kullanılması.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">11</div>
+                <div class="service-card__icon">❄️</div>
+
+                <h3>Klima montajı</h3>
+
+                <p>
+                    Ev veya iş yerinde klimaların
+                    kurulumu ve bağlantısı.
+                </p>
+
+                <a href="#contact-form">
+                    Montajı konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">12</div>
+                <div class="service-card__icon">👨‍🍳</div>
+
+                <h3>Aşçı</h3>
+
+                <p>
+                    Ev, etkinlik ve diğer işler için
+                    yemek hazırlama hizmeti.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">13</div>
+                <div class="service-card__icon">⚡</div>
+
+                <h3>Elektrik hizmetleri</h3>
+
+                <p>
+                    Elektrik tesisatı, onarım
+                    ve ekipman bağlantısı.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">14</div>
+                <div class="service-card__icon">🔧</div>
+
+                <h3>Tesisatçı hizmetleri</h3>
+
+                <p>
+                    Sıhhi tesisat ekipmanlarının
+                    onarımı, kurulumu ve bakımı.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">15</div>
+                <div class="service-card__icon">⚙️</div>
+
+                <h3>İşletme otomasyonu</h3>
+
+                <p>
+                    İş süreçlerinin otomasyonu
+                    ve çalışma verimliliğinin artırılması.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">16</div>
+                <div class="service-card__icon">❄️</div>
+
+                <h3>Kar temizleme</h3>
+
+                <p>
+                    Alan, bahçe, yollar ve girişlerden
+                    kar temizleme hizmeti.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card reveal">
+                <div class="service-card__number">17</div>
+                <div class="service-card__icon">🔧</div>
+
+                <h3>Diğer işler</h3>
+
+                <p>
+                    Aradığınız hizmet listede yok mu?
+                    Bize ne yapılması gerektiğini anlatın.
+                </p>
+
+                <a href="#contact-form">
+                    İşi konuşalım →
+                </a>
+            </article>
+
+
+            <article class="service-card service-card--accent reveal">
+                <div class="service-card__number">18</div>
+                <div class="service-card__icon">💬</div>
+
+                <h3>Talebinize göre</h3>
+
+                <p>
+                    Hizmetin adını bilmeniz gerekmez.
+                    Yapılması gerekeni anlatmanız yeterli.
+                </p>
+
+                <a href="#contact-form">
+                    İşi anlatın →
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= NOT FOUND ================= -->
+
+<section class="section problem">
+    <div class="container">
+
+        <div class="problem__box reveal">
+
+            <div class="problem__content">
+                <span class="section-label">ARADIĞINIZ HİZMETİ BULAMADINIZ MI?</span>
+
+                <h2>
+                    Yapılacak işin adını
+                    bilmiyor musunuz?
+                </h2>
+
+                <p>
+                    Hiç sorun değil. Yapılması gerekeni
+                    anlatmanız yeterli. İşi konuşalım
+                    ve yardımcı olup olamayacağımızı söyleyelim.
+                </p>
+
+                <a
+                    href="#"
+                    data-phone
+                    class="btn btn--light btn--large"
+                >
+                    Arayın ve konuşalım
+                </a>
+            </div>
+
+            <div class="problem__shape">
+                <span>?</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="section why">
+    <div class="container">
+
+        <div class="section-heading section-heading--center reveal">
+            <span class="section-label">NEDEN ҚЫЗМЕТ KZ</span>
+
+            <h2>
+                Her şey düşündüğünüzden daha kolay
+            </h2>
+
+            <p>
+                İşlerin adlarını bilmenize gerek yok.
+                İhtiyacınızı anlatın — gerisini birlikte çözelim.
+            </p>
+        </div>
+
+        <div class="advantages">
+
+            <article class="advantage reveal">
+                <div class="advantage__icon">01</div>
+                <h3>Tek iletişim noktası</h3>
+                <p>
+                    Her iş için ayrı birini
+                    aramanıza gerek yok.
+                </p>
+            </article>
+
+            <article class="advantage reveal">
+                <div class="advantage__icon">02</div>
+                <h3>Kolay iletişim</h3>
+                <p>
+                    Yapılması gerekeni kendi
+                    kelimelerinizle anlatmanız yeterli.
+                </p>
+            </article>
+
+            <article class="advantage reveal">
+                <div class="advantage__icon">03</div>
+                <h3>Anlaşarak çalışıyoruz</h3>
+                <p>
+                    İşi, kapsamını ve uygun zamanı
+                    önceden konuşuyoruz.
+                </p>
+            </article>
+
+            <article class="advantage reveal">
+                <div class="advantage__icon">04</div>
+                <h3>Farklı işler</h3>
+                <p>
+                    Ev, bahçe, arsa ve diğer
+                    çeşitli işler.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= HOW ================= -->
+
+<section class="section how" id="how">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-label">NASIL ÇALIŞIYORUZ</span>
+
+            <h2>
+                Üç adım —
+                <span>ve işiniz çözülür</span>
+            </h2>
+        </div>
+
+        <div class="steps">
+
+            <article class="step reveal">
+                <div class="step__number">01</div>
+
+                <div>
+                    <h3>Bize ulaşırsınız</h3>
+                    <p>
+                        Arayıp yapılması gereken
+                        işi anlatırsınız.
+                    </p>
+                </div>
+            </article>
+
+            <article class="step reveal">
+                <div class="step__number">02</div>
+
+                <div>
+                    <h3>Konuşuruz</h3>
+                    <p>
+                        Detayları, işin kapsamını ve
+                        uygun zamanı belirleriz.
+                    </p>
+                </div>
+            </article>
+
+            <article class="step reveal">
+                <div class="step__number">03</div>
+
+                <div>
+                    <h3>Yaparız</h3>
+                    <p>
+                        Belirlenen zamanda gelip
+                        kararlaştırılan işi tamamlarız.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= WORKS ================= -->
+
+<section class="section works" id="works">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-label">ÇALIŞMALARIMIZ</span>
+
+            <h2>
+                Çalışıyoruz —
+                <span>sonucu gösteriyoruz</span>
+            </h2>
+
+            <p>
+                Burada ҚЫЗМЕТ KZ tarafından gerçekleştirilen
+                gerçek işlerin fotoğrafları yer alacaktır.
+            </p>
+        </div>
+
+        <div class="gallery">
+
+            <div class="gallery__item gallery__item--large reveal">
+                <img
+                    src="images/work-01.jpg"
+                    alt="Ev ve bahçe işleri"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery__item reveal">
+                <img
+                    src="images/work-02.jpg"
+                    alt="Alan temizliği"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery__item reveal">
+                <img
+                    src="images/work-03.jpg"
+                    alt="Tamir işleri"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery__item reveal">
+                <img
+                    src="images/work-04.jpg"
+                    alt="Bahçede yapılan işler"
+                    loading="lazy"
+                >
+            </div>
+
+        </div>
+
+        <div class="gallery-note reveal">
+            <span>📸</span>
+            <p>
+                Site yayına alındıktan sonra geçici fotoğrafları
+                gerçek çalışma fotoğraflarıyla değiştirin.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+    <div class="container">
+
+        <div class="cta__inner reveal">
+
+            <div>
+                <span class="section-label section-label--light">
+                    BİR İŞİNİZ Mİ VAR?
+                </span>
+
+                <h2>
+                    Yapılması gerekeni
+                    anlatın.
+                </h2>
+
+                <p>
+                    Hizmetin adını bilmenize gerek yok.
+                    İhtiyacınızı anlatın — yapıp yapamayacağımızı
+                    birlikte konuşalım.
+                </p>
+            </div>
+
+            <div class="cta__action">
+
+                <a
+                    href="#"
+                    data-phone
+                    class="btn btn--light btn--large"
+                >
+                    Ara
+                </a>
+
+                <a
+                    href="#contact-form"
+                    class="cta__phone"
+                    data-phone-display
+                >
+                    +7 700 000 00 00
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CONTACTS ================= -->
+
+<section class="section contacts" id="contacts">
+    <div class="container contacts__grid">
+
+        <div class="contacts__info reveal">
+
+            <span class="section-label">İLETİŞİM</span>
+
+            <h2>
+                İşinizi
+                konuşalım
+            </h2>
+
+            <p>
+                Bizi arayın ve yapılması gereken
+                işi anlatın.
+            </p>
+
+            <a
+                class="contacts__phone"
+                data-phone
+                data-phone-display
+                href="#"
+            >
+            </a>
+
+            <div class="contact-details">
+
+                <div class="contact-detail">
+                    <span>📍</span>
+                    <div>
+                        <small>Şehir</small>
+                        <strong>Şehriniz</strong>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <span>🕐</span>
+                    <div>
+                        <small>Çalışma saatleri</small>
+                        <strong>Anlaşmaya göre</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-form-wrapper reveal" id="contact-form">
+
+            <div class="contact-form-card">
+
+                <span class="form-badge">HIZLI TALEP</span>
+
+                <h3>
+                    Yapılması gerekeni
+                    anlatın
+                </h3>
+
+                <p>
+                    Form şu anda demo olarak çalışmaktadır.
+                    Gerçek gönderim için backend
+                    veya form hizmeti bağlanacaktır.
+                </p>
+
+                <form id="requestForm">
+
+                    <label>
+                        <span>Adınız</span>
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Örneğin, Ahmet"
+                            autocomplete="name"
+                        >
+                    </label>
+
+                    <label>
+                        <span>Telefon *</span>
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="+7 700 000 00 00"
+                            autocomplete="tel"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        <span>Ne yapılması gerekiyor?</span>
+
+                        <textarea
+                            name="message"
+                            rows="4"
+                            placeholder="Örneğin: tadilattan sonra bahçenin temizlenmesi gerekiyor..."
+                        ></textarea>
+                    </label>
+
+                    <button
+                        type="submit"
+                        class="btn btn--primary btn--full"
+                    >
+                        Talep gönder
+                    </button>
+
+                    <div
+                        class="form-message"
+                        id="formMessage"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+    <div class="container footer__inner">
+
+        <div class="footer__brand">
+            <a href="#top" class="logo logo--footer">
+                <span>ҚЫЗМЕТ</span>
+                <strong>KZ</strong>
+            </a>
+
+            <p>
+                Ev, bahçe ve arsa işleri için yardım.
+            </p>
+        </div>
+
+        <div class="footer__links">
+            <a href="#services">Hizmetler</a>
+            <a href="#how">Nasıl çalışıyoruz</a>
+            <a href="#works">Çalışmalar</a>
+            <a href="#contacts">İletişim</a>
+        </div>
+
+        <div class="footer__contact">
+            <a href="#"
+                 data-phone
+                 data-phone-display>
+            </a>
+
+            <span>© 2026 ҚЫЗМЕТ KZ</span>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- ================= MOBILE CTA ================= -->
+
+<div class="mobile-cta">
+
+    <a
+        href="#"
+        data-phone
+        class="mobile-cta__call"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+            19.79 19.79 0 0 1-8.63-3.07
+            19.5 19.5 0 0 1-6-6
+            19.79 19.79 0 0 1-3.07-8.67
+            A2 2 0 0 1 4.11 2h3a2 2 0 0 1
+            2 1.72c.12.9.33 1.78.62 2.63
+            a2 2 0 0 1-.45 2.11L8 9.73
+            a16 16 0 0 0 6 6l1.27-1.27
+            a2 2 0 0 1 2.11-.45
+            c.85.29 1.73.5 2.63.62
+            A2 2 0 0 1 22 16.92z"/>
+        </svg>
+
+        Ara
+    </a>
+
+    <a
+        href="#contact-form"
+        class="mobile-cta__form"
+    >
+        Görüşelim
+    </a>
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
