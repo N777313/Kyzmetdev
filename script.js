@@ -5,6 +5,49 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* ================= PHONE ================= */
+
+    // ==========================================
+    // ИЗМЕНЯТЬ НОМЕР НУЖНО ТОЛЬКО ЗДЕСЬ
+    // ==========================================
+
+    const custom_phone = "+77013130007";
+
+
+    // Устанавливаем номер для всех ссылок
+    // с атрибутом data-phone
+    document.querySelectorAll("[data-phone]").forEach((element) => {
+
+        element.href = `tel:${custom_phone}`;
+
+    });
+
+
+    // Устанавливаем номер текстом
+    // для всех элементов с data-phone-display
+    document.querySelectorAll("[data-phone-display]").forEach((element) => {
+
+        // Убираем + из начала для более удобного форматирования
+        const digits = custom_phone.replace(/\D/g, "");
+
+        let displayPhone = custom_phone;
+
+        if (digits.length === 11 && digits.startsWith("7")) {
+
+            displayPhone =
+                "+7 " +
+                digits.slice(1, 4) + " " +
+                digits.slice(4, 7) + " " +
+                digits.slice(7, 9) + " " +
+                digits.slice(9, 11);
+
+        }
+
+        element.textContent = displayPhone;
+
+    });
+
+
     /* ================= MOBILE MENU ================= */
 
     const menuToggle = document.getElementById("menuToggle");
